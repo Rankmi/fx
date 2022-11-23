@@ -1,4 +1,6 @@
-module Fx
-  # @api private
-  VERSION = "0.7.0"
+module Rankmi
+  module Fx
+    # @api private
+    VERSION = "0.8.0"
+  end
 end
