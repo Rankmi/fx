@@ -4,16 +4,17 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "fx/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "fx"
-  spec.version       = Fx::VERSION
-  spec.authors       = ["Teo Ljungberg"]
-  spec.email         = ["teo@teoljungberg.com"]
+  spec.name          = "rankmi-fx"
+  spec.version       = Rankmi::Fx::VERSION
+  spec.authors       = [" Jhoynerk Caraballo", "Felipe Henriquez"]
+  spec.email         = %w[jhoynerk.caraballo@rankmi.com felipe.henriquez@gmail.com]
   spec.summary       = %q{Support for database functions and triggers in Rails migrations}
   spec.description   = <<-DESCRIPTION
     Adds methods to ActiveRecord::Migration to create and manage database functions
-    and triggers in Rails
+    and triggers in Rails - allowing or not include the functions and triggers be included
+    on the schema.rb
   DESCRIPTION
-  spec.homepage      = "https://github.com/teoljungberg/fx"
+  spec.homepage      = "https://www.rankmi.com"
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0")
