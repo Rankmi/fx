@@ -22,7 +22,7 @@ module Fx
       private
 
       def dumpable_triggers_in_database
-        @_dumpable_triggers_in_database ||= Fx.database.triggers
+        @_dumpable_triggers_in_database ||= Fx.configuration.include_trigger_from_schema_condition
       end
     end
   end
