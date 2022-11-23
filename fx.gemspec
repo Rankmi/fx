@@ -21,6 +21,8 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^spec/})
   spec.require_paths = ['lib']
 
+  spec.metadata    = { "github_repo" => "ssh://github.com/Rankmi/fx" }
+
   spec.add_development_dependency "appraisal", '~> 2.3.0'
   spec.add_development_dependency "bundler", '>= 1.5'
   spec.add_development_dependency "database_cleaner"
